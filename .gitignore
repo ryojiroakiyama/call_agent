@@ -1,0 +1,23 @@
+# 環境変数設定ファイル
+.env
+
+# バイナリファイル
+call_agent
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# テストファイル
+*.test
+*.tmp
+
+# ログファイル
+*.log
+
+# macOSシステムファイル
+.DS_Store
+
+# Goの依存関係関連
+vendor/
