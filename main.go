@@ -19,10 +19,12 @@ func init() {
 
 // 着信に応答するハンドラー
 func handleIncomingCall(w http.ResponseWriter, r *http.Request) {
+	log.Println("着信を受け取りました")
+
 	// TwiMLレスポンスを作成
 	twiml := `<?xml version="1.0" encoding="UTF-8"?>
 <Response>
-	<Say voice="woman" language="ja-JP">こんにちは、こちらは自動応答システムです。お電話ありがとうございます。</Say>
+	<Say voice="woman" language="ja-JP">こんにちは。いい天気ですね。お電話ありがとうございます。</Say>
 </Response>`
 	
 	// レスポンスをXMLとして送信
